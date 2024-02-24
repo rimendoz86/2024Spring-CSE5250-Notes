@@ -81,3 +81,5 @@ int main(int argc, char *argv[]){
 - while mpi.c is open. Click Terminal > Run Build Task...
 - you should see a new mpi.exe file
 - in command line run .\mpi.exe
+
+~ Created by following https://www.youtube.com/watch?v=T_BVqSya1Is with simplifications and additions.
