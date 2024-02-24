@@ -24,7 +24,7 @@ Running MSMPI with VSCode
     MSMPI_LIB32=C:\MSMPI\SDK\Lib\x86\
     MSMPI_LIB64=C:\MSMPI\SDK\Lib\x64\
     ```
-- verify msmpi install with ```mspiexec```
+- verify msmpi install with ```mspiexec``` in command line.
 
 4. Create Sample Code
 - create mpi.c
@@ -61,12 +61,12 @@ int main(int argc, char *argv[]){
 - Fix intellisense
   - hover over ```#include <mpi.h>```  in mpi.c and click quick fix, or press ctrl-shift-p and search for "C/C++: Edit Configurations (UI)"
   - add "${MSMPI_INC}" to the include path 
-  - check that this saved by opening /.vscode/c_cpp_prioerties.json and looking for ${MSMPI_INC}
+  - check that this saved by opening /.vscode/c_cpp_properties.json and looking for ${MSMPI_INC}
   - Check that this works by right clicking <mpi.h> in the mpi.c and clicking go to definition. You should see the content of mpi.h
 
 6. Create/Configure Build task
 - Click Terminal > Configure Default Build Task
-- Select the MinGW64 from c:/MinGW65/ from the list.
+- Select the MinGW64 from c:/MinGW64/ from the list.
 - This will create /.vscode/tasks.json
 - in the args array, in between the ```"${file}",``` and ``` "-o", ``` arguments, add the following the following arguments
 ```json
