@@ -6,7 +6,7 @@ Running MSMPI with VSCode
     - Download [x86_64-posix-sjlj](https://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win64/Personal%20Builds/mingw-builds/8.1.0/threads-posix/sjlj/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0.7z)
     - Unzip to C:/MinGW64
     - add C:/MinGW64/mingw64/bin to System Environment Variables
-    - While here you can check if you have other versions of MinGW64 installed and remove the paths to prevent potential issues.
+        - While here you can check if you have other versions of MinGW64 installed and remove the paths to prevent potential issues.
     - test gcc from commandline with
 ```gcc --version```
     - check the version in the output
